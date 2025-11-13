@@ -2,13 +2,13 @@
 This directory contrains the dotfiles for my system
 
 ## Requirements
-Ensure you have the following installed on yout system
+Ensure you have the following installed on your system
 
 - Git
 - Stow
 
 ## Installation
-Firt, check out the dotfiles repo in your $HOME directory using git
+First, check out the dotfiles repo in your $HOME directory using git
 
 ```bash
 git clone https://github.com/gllrmoliva/dotfiles.git
