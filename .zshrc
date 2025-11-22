@@ -131,4 +131,6 @@ export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - zsh)"
 
+# Alias para iniciar conda ojo que tiene el nombre de usuario hardcoded
+alias cac='eval "$(/home/gllrm/miniconda3/bin/conda shell.bash hook)"'
 # Restart your shell for the changes to take effect.
