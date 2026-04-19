@@ -74,7 +74,7 @@ require("ibl").setup()
 
 require("mason").setup()
 require("mason-lspconfig").setup({
-  ensure_installed = { "lua_ls", "pyright", "ts_ls" },
+  ensure_installed = { "lua_ls", },
 })
 require("plugins.lspconfig")
 -- Para actualizar :Pckr sync
