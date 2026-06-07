@@ -51,7 +51,7 @@ require('pckr').add{
     "echasnovski/mini.icons",                       --dependencia alpha-nvim
     "meatballs/notebook.nvim",                      --visualizador de ipynb
     "akinsho/bufferline.nvim",                      --buffers arriba
-    "MeanderingProgrammer/render-markdown.nvim",    -- markdown
+--    "MeanderingProgrammer/render-markdown.nvim",    -- markdown
     "lukas-reineke/indent-blankline.nvim",          -- lineas en scopes
     "RRethy/vim-illuminate",                        -- iluminar variables con mismo nombre
     "mason-org/mason.nvim",                         -- LSP
@@ -78,3 +78,5 @@ require("mason-lspconfig").setup({
 })
 require("plugins.lspconfig")
 -- Para actualizar :Pckr sync
+--
+vim.keymap.set("n", "<leader>t", ":term<CR>i", { noremap = true, silent = true, desc = "Abrir terminal" })
