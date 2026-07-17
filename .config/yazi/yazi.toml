@@ -1,0 +1,12 @@
+[opener]
+okular = [
+    { run = 'okular "$@"', orphan = true, desc = "Open with Okular" }
+]
+
+[open]
+prepend_rules = [
+    # Match by MIME type
+    { mime = "application/pdf", use = "okular" },
+    { mime = "application/epub+zip", use = "okular" },
+    { mime = "image/vnd.djvu", use = "okular" },
+]

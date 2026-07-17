@@ -121,18 +121,3 @@ export EDITOR="nvim"
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
-
-# Load pyenv automatically by appending
-# the following to 
-# ~/.zprofile (for login shells)
-# and ~/.zshrc (for interactive shells) :
-
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - zsh)"
-
-# Alias para iniciar conda ojo que tiene el nombre de usuario hardcoded
-alias cac='eval "$(/home/gllrm/miniconda3/bin/conda shell.bash hook)"'
-# Restart your shell for the changes to take effect.
-
-. "$HOME/.local/bin/env"

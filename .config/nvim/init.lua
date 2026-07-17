@@ -39,8 +39,7 @@ end
 bootstrap_pckr()
 
 require('pckr').add{
-	"nvim-treesitter/nvim-treesitter",              --sintax color
-	"nvim-tree/nvim-tree.lua",                      --archivos
+    "nvim-tree/nvim-tree.lua",                      --archivos
     "nvim-tree/nvim-web-devicons",                  --iconos
     "nvim-lua/plenary.nvim",                        --dependencia telescope
     "nvim-telescope/telescope.nvim",                --selección de buffer
@@ -51,12 +50,20 @@ require('pckr').add{
     "echasnovski/mini.icons",                       --dependencia alpha-nvim
     "meatballs/notebook.nvim",                      --visualizador de ipynb
     "akinsho/bufferline.nvim",                      --buffers arriba
---    "MeanderingProgrammer/render-markdown.nvim",    -- markdown
+    --    "MeanderingProgrammer/render-markdown.nvim",    -- markdown
     "lukas-reineke/indent-blankline.nvim",          -- lineas en scopes
     "RRethy/vim-illuminate",                        -- iluminar variables con mismo nombre
     "mason-org/mason.nvim",                         -- LSP
     "neovim/nvim-lspconfig",                        -- LSP
-    "mason-org/mason-lspconfig.nvim"                -- LSP
+    "mason-org/mason-lspconfig.nvim",                -- LSP
+    { 
+        'nvim-treesitter/nvim-treesitter', --sintax color
+        branch = 'master',
+        run = ':TSUpdate',
+        config = function()
+            require('plugins.treesitter') 
+        end
+    }
 }
 
 require("plugins.telescope")
