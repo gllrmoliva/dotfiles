@@ -36,7 +36,7 @@
     }
   },
   "custom/omarchy": {
-    "format": "<span font='omarchy'> :-) </span>",
+    "format": "<span font='omarchy'> : ) </span>",
     "on-click": "omarchy-menu",
     "on-click-right": "xdg-terminal-exec",
     "tooltip-format": "Omarchy Menu\n\nSuper + Alt + Space"
@@ -57,8 +57,7 @@
     "on-click-right": "alacritty"
   },
   "clock": {
-    "format": "{:L%A %H:%M}",
-    "format-alt": "{:L%d %B %Y}",
+    "format": "{:L%d %B %Y | %H:%M}",
     "tooltip": false,
     "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select"
   },
@@ -83,9 +82,9 @@
     "on-click": "omarchy-launch-wifi"
   },
   "battery": {
-    "format": "{capacity}% <span font='10' rise='-1000'>{icon}</span>",
-    "format-discharging": "{capacity}% <span font='10' rise='-1000'>{icon}</span>",
-    "format-charging": "{capacity}% <span font='16' rise='-1000'>{icon}</span>",
+    "format": "<span font='10' rise='-1000'>{icon}</span> {capacity}% ",
+    "format-discharging": "<span font='10' rise='-1000'>{icon}</span> {capacity}% ",
+    "format-charging": "<span font='16' rise='-1000'>{icon}</span> {capacity}% ",
     "format-plugged": "<span font='10' rise='-1000'></span>",
     "format-icons": {
       "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
@@ -116,7 +115,7 @@
     "on-click": "omarchy-launch-audio",
     "on-click-right": "pamixer -t",
     "tooltip-format": "Playing at {volume}%",
-    "scroll-step": 5,
+    "scroll-step": 0.5,
     "format-muted": "",
     "format-icons": {
       "headphone": "",
