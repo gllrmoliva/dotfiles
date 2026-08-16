@@ -1,0 +1,32 @@
+# Generated for gllrm-custom (Omarchy v4).
+mode = "dark"
+
+accent = "#fa8b78"
+selection = "#b0534c"
+muted = "#9a8372"
+
+background = "#0c0c0c"
+dark_background = "#060606"
+darker_background = "#000000"
+lighter_background = "#141414"
+
+foreground = "#f2e3d2"
+dark_foreground = "#c2a992"
+light_foreground = "#f6ecdd"
+bright_foreground = "#faf3e9"
+
+red = "#e07a6d"
+yellow = "#e3c878"
+orange = "#ef9372"
+green = "#93b982"
+cyan = "#7fbdb3"
+blue = "#8aaed0"
+magenta = "#c58fae"
+brown = "#96785f"
+
+bright_red = "#e88a7e"
+bright_yellow = "#ecd48b"
+bright_green = "#a1c590"
+bright_cyan = "#8fcdc3"
+bright_blue = "#99bcdd"
+bright_magenta = "#d1a1bd"
