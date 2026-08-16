@@ -4,10 +4,10 @@ selection = "#4A3128"
 muted = "#A38C7A"
 
 # --- Backgrounds ---
-background = "#120F0E"
-dark_background = "#0B0908"
-darker_background = "#050404"
-lighter_background = "#1A1513"
+background = "#090706"
+dark_background = "#040302"
+darker_background = "#000000"
+lighter_background = "#100D0C"
 
 # --- Foregrounds ---
 foreground = "#F2E3D2"
